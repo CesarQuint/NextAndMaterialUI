@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Date from '../components/date';
 import { GetStaticProps } from 'next';
 
+import Button from '@mui/material/Button';
+
 export default function Home({
   allPostsData,
 }: {
@@ -36,6 +38,7 @@ export default function Home({
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
+                <Button variant="outlined">Hello World</Button>
               </small>
             </li>
           ))}
